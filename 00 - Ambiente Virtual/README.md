@@ -25,15 +25,9 @@ OBS: Você vai precisar ter uma vensão recente do python instalado (acima da ve
 
 4 - Você vai precisar ativar o ambiente virtual:
 
-    Linux e Mac: Dentro da pasta bin 
+Linux e Mac: Dentro da pasta bin use o comando: <code> source activate </code>
 
-    <code> source activate </code>
-
-    Windows: Dentro da pasta Scripts
-
-    <code>activate</code>
-
-    Obs: O terminal do VSCode não consegue funcionar. Você vai ter que usar o cmd. 
+Windows: Dentro da pasta Scripts use o comando: <code>activate</code> Obs: O terminal do VSCode não consegue funcionar. Você vai ter que usar o cmd. 
 
 
 Fonte: https://www.youtube.com/watch?v=Yp9EWlKfyqc&t=73s
