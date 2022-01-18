@@ -81,11 +81,11 @@ pyautogui.write("Relatorio de vendas")
 pyautogui.press("tab")#muda para o campo do corpo do email
 
 #ESCREVE O TEXTO
-texto = """ 
+texto = f""" 
 Prezados, bom dia
 
-O faturamento de ontem foi de R$: faturamento
-A quantidade de produtos foi de: quantidade
+O faturamento de ontem foi de R$: {faturamento}
+A quantidade de produtos foi de: {qtde_produtos}
 
 Abs
 
