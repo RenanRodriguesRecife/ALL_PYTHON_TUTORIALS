@@ -85,8 +85,8 @@ pyautogui.press("tab")#muda para o campo do corpo do email
 texto = f""" 
 Prezados, bom dia
 
-O faturamento de ontem foi de R$: {faturamento}
-A quantidade de produtos foi de: {qtde_produtos}
+O faturamento de ontem foi de R$: {faturamento:,.2f}
+A quantidade de produtos foi de: {qtde_produtos:,}
 
 Abs
 
