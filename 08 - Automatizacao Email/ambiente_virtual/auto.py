@@ -37,3 +37,14 @@ time.sleep(5)
 #Macete para pegar o valor da posicao do mouse
 #time.sleep(5)
 #pyautgui.position()
+
+#2 - clicar na pasta do drive
+pyautogui.click(x=974,y=676,clicks=2)
+time.sleep(2)
+
+#3 - fazer download
+pyautogui.click(x=922,y=828) #clica no arguivo
+pyautogui.click(x=3339, y=404) #clica nos 3 pontos
+pyautogui.click(x=2890, y=1406) #clica em fazer download
+
+time.sleep(5) #esperar o download
