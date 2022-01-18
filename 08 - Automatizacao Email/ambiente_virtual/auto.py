@@ -5,6 +5,7 @@
 # 5 - Calcular o faturamente e a quantidade de produtos vendidos (os indicadores)
 # 6 - Enviar o email para a diretoria
 
+from http.client import PROXY_AUTHENTICATION_REQUIRED
 import pyautogui
 import pyperclip
 # import webbrowser
@@ -52,11 +53,30 @@ time.sleep(5) #esperar o download
 
 #importar a base de vendas pro python
 import pandas as pd
-import display
+from IPython import display
 
-tabela = pd.read_excel(r"C:\Users\z400\Downloads\Vendas - Dez.xlsx")
+tabela = pd.read_excel(r"C:\Users\User\Downloads\Vendas - Dez.xlsx")
 display(tabela)
 
 #5 - calcular o faturamento e a quantidade de produtos vendidos
 faturamento = tabela["Valor Final"].sum()
 qtde_produtos = tabela["Quantidade"].sum()
+
+#6 Enviar email para a diretoria
+pyautogui.hotkey("ctrl","t")
+pyperclip.copy("https://mail.google.com/mail/u/0/#inbox")
+pyautogui.hotkey("ctrl","v")
+pyautogui.press("enter")
+
+time.sleep(5)
+
+#clicar no botão escrever do gmail
+pyautogui.click(x=282, y=463)
+pyautogui.write("email-aleatorio@gmail.com")
+pyautogui.press("tab")#seleciona o e-mail
+pyautogui.press("tab")#muda para o campo de assunto
+
+#preenche o assunto
+pyautogui.write("Relatorio de vendas")
+pyautogui.press("tab")#muda para o campo do corpo do email
+
