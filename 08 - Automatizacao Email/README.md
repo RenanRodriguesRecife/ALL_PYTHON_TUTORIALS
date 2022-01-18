@@ -24,4 +24,4 @@ pyperclip
 
 outros
 display - imprimir em forma de tabela
-<code>pip install display</code>
+<code>pip install IPython</code>
