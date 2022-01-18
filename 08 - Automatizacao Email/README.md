@@ -26,3 +26,6 @@ OBS: pyautogui não roda em segundo plano
 outros
 display - imprimir em forma de tabela
 <code>pip install IPython</code>
+
+
+OBS: O código foi executado no jupyter notebook (anaconda)
