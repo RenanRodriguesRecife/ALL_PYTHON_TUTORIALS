@@ -8,6 +8,7 @@
 import pyautogui
 import pyperclip
 # import webbrowser
+import time
 
 #tempo de PAUSA entre um comando e outro
 pyautogui.PAUSE = 1
@@ -29,3 +30,10 @@ pyautogui.hotkey("ctrl","t")
 pyperclip.copy('https://drive.google.com/drive/folders/149xknr9JvrlEnhNWO49zPcw0PW5icxga?usp=sharing') #copiando um link
 pyautogui.hotkey("ctrl","v")
 pyautogui.press("enter")
+
+#esperar 5 segundos para dar tempo para tudo carregar
+time.sleep(5)
+
+#Macete para pegar o valor da posicao do mouse
+#time.sleep(5)
+#pyautgui.position()
