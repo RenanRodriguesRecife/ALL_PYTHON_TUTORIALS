@@ -9,6 +9,10 @@ Bibliotecas usadas:
 Trabalhar com a base de dados:
 pandas 
 
+Para instalar o pandas você vai precisar do: numpy e do openpyxL
+<code>pip install numpy</code>
+<code>pip install openpyxL</code>
+<code>pip install pandas</code>
 
 Bibliotecas para automatizar o mouse e o teclado:
 pyautogui
