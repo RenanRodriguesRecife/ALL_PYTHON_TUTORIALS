@@ -21,6 +21,7 @@ pyperclip
 <code>pip install pyautogui</code>
 <code>pip install pyperclip</code>
 
+OBS: pyautogui não roda em segundo plano
 
 outros
 display - imprimir em forma de tabela
