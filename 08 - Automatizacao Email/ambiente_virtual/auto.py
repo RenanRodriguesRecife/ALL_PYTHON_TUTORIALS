@@ -26,6 +26,6 @@ pyautogui.PAUSE = 1
 #abre uma nova no navegador:
 pyautogui.hotkey("ctrl","t")
 #pyperclip trabalha com textos com caracteres especiais
-pyperclip.copy('http//drive.google.com/drive/folders/149xknr93vrlEnhNWO49zPcw0PW5icxga?usp=sharing')
+pyperclip.copy('https://drive.google.com/drive/folders/149xknr9JvrlEnhNWO49zPcw0PW5icxga?usp=sharing') #copiando um link
 pyautogui.hotkey("ctrl","v")
 pyautogui.press("enter")
