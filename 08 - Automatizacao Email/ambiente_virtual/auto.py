@@ -80,3 +80,16 @@ pyautogui.press("tab")#muda para o campo de assunto
 pyautogui.write("Relatorio de vendas")
 pyautogui.press("tab")#muda para o campo do corpo do email
 
+#ESCREVE O TEXTO
+texto = """ 
+Prezados, bom dia
+
+O faturamento de ontem foi de R$: faturamento
+A quantidade de produtos foi de: quantidade
+
+Abs
+
+"""
+
+#clicar em enviar
+pyautogui.hotkey("ctrl","enter")
