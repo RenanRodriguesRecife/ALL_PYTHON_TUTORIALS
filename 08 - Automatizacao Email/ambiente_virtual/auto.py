@@ -40,13 +40,13 @@ time.sleep(5)
 #pyautgui.position()
 
 #2 - clicar na pasta do drive
-pyautogui.click(x=974,y=676,clicks=2)
+pyautogui.click(x=408,y=301,clicks=2)
 time.sleep(2)
 
 #3 - fazer download
-pyautogui.click(x=922,y=828) #clica no arguivo
-pyautogui.click(x=3339, y=404) #clica nos 3 pontos
-pyautogui.click(x=2890, y=1406) #clica em fazer download
+pyautogui.click(x=376,y=389) #clica no arquivo
+pyautogui.click(x=1220, y=188) #clica nos 3 pontos
+pyautogui.click(x=928, y=662) #clica em fazer download
 
 time.sleep(5) #esperar o download
 
@@ -56,7 +56,7 @@ import pandas as pd
 from IPython import display
 
 tabela = pd.read_excel(r"C:\Users\User\Downloads\Vendas - Dez.xlsx")
-display(tabela)
+# display(tabela)
 
 #5 - calcular o faturamento e a quantidade de produtos vendidos
 faturamento = tabela["Valor Final"].sum()
@@ -71,8 +71,9 @@ pyautogui.press("enter")
 time.sleep(5)
 
 #clicar no botão escrever do gmail
-pyautogui.click(x=282, y=463)
-pyautogui.write("email-aleatorio@gmail.com")
+pyautogui.click(x=84, y=197)
+time.sleep(20)
+pyautogui.write("email_qualquer@gmail.com")
 pyautogui.press("tab")#seleciona o e-mail
 pyautogui.press("tab")#muda para o campo de assunto
 
@@ -86,11 +87,16 @@ texto = f"""
 Prezados, bom dia
 
 O faturamento de ontem foi de R$: {faturamento:,.2f}
+
+pyautogui.hotkey("ctrl","enter")
 A quantidade de produtos foi de: {qtde_produtos:,}
 
 Abs
 
 """
+pyperclip.copy(texto)
+pyautogui.hotkey("ctrl","v")
+
 
 #clicar em enviar
 pyautogui.hotkey("ctrl","enter")
