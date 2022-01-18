@@ -48,3 +48,15 @@ pyautogui.click(x=3339, y=404) #clica nos 3 pontos
 pyautogui.click(x=2890, y=1406) #clica em fazer download
 
 time.sleep(5) #esperar o download
+
+
+#importar a base de vendas pro python
+import pandas as pd
+import display
+
+tabela = pd.read_excel(r"C:\Users\z400\Downloads\Vendas - Dez.xlsx")
+display(tabela)
+
+#5 - calcular o faturamento e a quantidade de produtos vendidos
+faturamento = tabela["Valor Final"].sum()
+qtde_produtos = tabela["Quantidade"].sum()
