@@ -20,3 +20,8 @@ pyperclip
 
 <code>pip install pyautogui</code>
 <code>pip install pyperclip</code>
+
+
+outros
+display - imprimir em forma de tabela
+<code>pip install display</code>
