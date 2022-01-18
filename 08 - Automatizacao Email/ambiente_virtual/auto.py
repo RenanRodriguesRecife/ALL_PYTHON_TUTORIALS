@@ -77,7 +77,8 @@ pyautogui.press("tab")#seleciona o e-mail
 pyautogui.press("tab")#muda para o campo de assunto
 
 #preenche o assunto
-pyautogui.write("Relatorio de vendas")
+pyperclip.copy("Relatório de vendas")
+pyautogui.hotkey("ctrl","v")
 pyautogui.press("tab")#muda para o campo do corpo do email
 
 #ESCREVE O TEXTO
