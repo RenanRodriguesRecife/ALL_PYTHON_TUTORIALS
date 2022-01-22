@@ -1,4 +1,4 @@
-<code>pip install request</code>
+<code>pip install requests</code>
 
 Requisição de API com Python - 
 https://www.instagram.com/p/CYjccBcsqEx/
