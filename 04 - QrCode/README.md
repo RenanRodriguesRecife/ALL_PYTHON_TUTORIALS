@@ -2,7 +2,7 @@
 use o atributo pil para incluir também a biblioteca Pillow para gerar imagens
 
 
-QR CODE EM PYTHON
+Gerar QR CODE EM PYTHON
 
 <img src="ambiente_virtual/QrCode.png">
 
