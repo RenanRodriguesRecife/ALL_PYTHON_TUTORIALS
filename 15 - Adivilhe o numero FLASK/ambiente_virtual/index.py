@@ -10,6 +10,10 @@ def sobre():
     return 'Sobre'
 
 
+@app.route('/<string:nome>')
+def error(nome):
+    return f'Pagina ({nome} não existe)'
+
 # Para compiliar
 # Primeiro você deve exportar
 # export FLASK_APP=index.py (Linux, Mac)
