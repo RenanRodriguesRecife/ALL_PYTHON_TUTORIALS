@@ -13,7 +13,7 @@ OBS: Você vai precisar ter uma vensão recente do python instalado (acima da ve
 2 - 
     Para windows:
     <code>py -m venv nome_que_você_quer_colocar</code>
-    OBS: No windows se no terminal estiver uma versão antiga de python como padrão e você tiver python 3 instalado
+    OBS:(windows) se no terminal estiver uma versão antiga de python como padrão e você tiver python 3 instalado
     execute o comando <code>py - 3<code> para modificar a versão de python
     Para Linux e MAC:
     <code>python3 -m venv nome_que_você_quer_colocar</code>
