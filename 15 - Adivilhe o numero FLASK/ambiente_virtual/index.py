@@ -12,7 +12,8 @@ def sobre():
 
 @app.route('/<string:nome>')
 def error(nome):
-    return f'Pagina ({nome} não existe)'
+    variavel = f'Pagina ({nome} não existe)'
+    return render_template('error.html',variavel=variavel)
 
 # Para compiliar
 # Primeiro você deve exportar
