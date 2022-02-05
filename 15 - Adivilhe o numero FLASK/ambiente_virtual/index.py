@@ -8,7 +8,7 @@ def index():
     if request.method == "GET":
         return render_template("index.html",variavel=variavel)
     else:
-        numero = 0
+        numero = randint(1,20)
         palpite = int(request.form.get("name"))
         if numero == palpite:
             return '<h1>Resultado: Você Ganhou</h1>'
