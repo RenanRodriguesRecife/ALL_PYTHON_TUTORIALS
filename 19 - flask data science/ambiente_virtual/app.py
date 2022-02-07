@@ -34,3 +34,15 @@ if __name__ == '__main__':
 #  prepara um Response objeto Flask com coisas úteis como a
 #   predefinição do tipo de conteúdo HTTP.
 
+# flask.jsonify(), não funciona bem com os tipos NumPy
+# voce deve converter para numeros nativos python
+
+# numpy_integer = numpy.int64(3)
+# json.dumps(int(numpy_integer))
+# para array
+# array_1d = numpy.array([1., 1.5, 2.])
+# json.dumps([float(v) for v in array_1d])
+# '[1.0, 1.5, 2.0]'
+# array_2d = numpy.array([[1., 1.5], [1.5, 2.]])
+# json.dumps([[float(v) for v in row] for row in array_2d])
+# '[[1.0, 1.5], [1.5, 2.0]]'
