@@ -11,9 +11,10 @@ while True:
     frame = np.array(img)
     frame = cv2.cvtColor(frame,cv2.COLOR_BGR2RGB)
     out.write(frame)
+    print("gravando...")
 
-    if cv2.waitKey(1) == ord("q"):
+    if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-cv2.desproyAllWindows()
+cv2.destroyAllWindows()
 out.release()
